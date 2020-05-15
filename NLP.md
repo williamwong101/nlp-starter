@@ -1,3 +1,4 @@
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 #! https://zhuanlan.zhihu.com/p/137946675
 # Neural Language Processing 自然语言处理 [*Neural Network Methods for Natural Language Porcessing* 阅读笔记]
 文献：
@@ -18,10 +19,13 @@
 - 允许对 *Markow Assumption* 的放弃
 
 ---
+
 ## 2. Learning Basics and Linear Models
+
 ### 2.1 Linear functions
+
 - *hypothesis classes* are linear functions or decision trees
--  Take the form $f(\textbf{x}) = \textbf{W}\cdot \textbf{x}+\textbf{b}$
+- Take the form $f(\textbf{x}) = \textbf{W}\cdot \textbf{x}+\textbf{b}$
 - parameters $\textbf{W}, \textbf{x}$ refered to as $\theta$ 
 - Con: restricted to linear functions
 - Pros: 
@@ -37,8 +41,11 @@
     - single run of final model over *test set*
 ### 2.3 Linear models
 - **Linear separable**: can be separated by straight line
+
 #### Binary classification
+
 $$\hat{y} = \text{sign}(f(\textbf{x})) = \text{sign}(\textbf{w}^T\cdot \textbf{x}+\textbf{b})$$
+
 - Log-Linear:
 $$\hat{y} = \sigma(f(\textbf{x}))= \frac{1}{1+e^{-(\textbf{w}^T\cdot \textbf{x}+\textbf{b})}}$$
 ### 2.4 Multi-class classification
